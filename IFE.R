@@ -26,45 +26,45 @@
 library("phtt")
 
 ## Load Data ##The paths below depend on your particular file directories.
-GDP.REG <- read.csv(file = "/home/kautu/Documents/GDP_REG/10r_2gdp_2013.csv", 
+GDP.REG <- read.csv(file = "10r_2gdp_2013.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.REG) <- GDP.REG$TIME
 g.regio <- as.matrix(GDP.REG[2:204])
 
-GDP.REG.PPS <- read.csv(file = "/home/kautu/Documents/GDP_REG/10r_2gdp_2013_pps.csv", 
+GDP.REG.PPS <- read.csv(file = "10r_2gdp_2013_pps.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.REG.PPS) <- GDP.REG.PPS$TIME
 g.pps <- as.matrix(GDP.REG.PPS[2:204])
 
-GDP.GFCF <- read.csv(file = "/home/kautu/Documents/GDP_REG/gfcf.csv", 
+GDP.GFCF <- read.csv(file = "gfcf.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.GFCF) <- GDP.GFCF$TIME
 g.gfcf <- as.matrix(GDP.GFCF[2:204])
 
 
-GDP.EMHR <- read.csv(file = "/home/kautu/Documents/GDP_REG/emhrw.csv", 
+GDP.EMHR <- read.csv(file = "emhrw.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.EMHR) <- GDP.EMHR$TIME
 emhrw <- as.matrix(GDP.EMHR[2:204])
 
 
-GDP.TOUR <- read.csv(file = "/home/kautu/Documents/GDP_REG/tour_2013.csv", 
+GDP.TOUR <- read.csv(file = "tour_2013.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.TOUR) <- GDP.TOUR$TIME
 tour.nin <- as.matrix(GDP.TOUR[2:204])
 
-GDP.TOUR.2 <- read.csv(file = "/home/kautu/Documents/GDP_REG/tour_arn2.csv", 
+GDP.TOUR.2 <- read.csv(file = "tour_arn2.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.TOUR.2) <- GDP.TOUR.2$TIME
 tour.arr <- as.matrix(GDP.TOUR.2[2:204])
 
-GDP.TOUR.CAP <- read.csv(file = "/home/kautu/Documents/GDP_REG/tour_cap.csv", 
+GDP.TOUR.CAP <- read.csv(file = "tour_cap.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.TOUR.CAP) <- GDP.TOUR.CAP$TIME
@@ -333,43 +333,43 @@ Tc.wg <- KSS(formula = log(tour.cap) ~ log(g.gfcf) + log(emhrw), additive.effect
 ## NOT INCLUDING IN THE PAPER. 
 
 ## Loading GFCF Compoments
-GDP.GFCF.A <- read.csv(file = "/home/kautu/Documents/GDP_REG/gfcf_a.csv", 
+GDP.GFCF.A <- read.csv(file = "gfcf_a.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.GFCF.A) <- GDP.GFCF.A$TIME
 gfcf.a <- as.matrix(GDP.GFCF.A[2:204])
 
-GDP.GFCF.B <- read.csv(file = "/home/kautu/Documents/GDP_REG/gfcf_b.csv", 
+GDP.GFCF.B <- read.csv(file = "gfcf_b.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.GFCF.B) <- GDP.GFCF.B$TIME
 gfcf.b <- as.matrix(GDP.GFCF.B[2:204])
 
-GDP.GFCF.C <- read.csv(file = "/home/kautu/Documents/GDP_REG/gfcf_c.csv", 
+GDP.GFCF.C <- read.csv(file = "gfcf_c.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.GFCF.C) <- GDP.GFCF.C$TIME
 gfcf.c <- as.matrix(GDP.GFCF.C[2:204])
 
-GDP.GFCF.f <- read.csv(file = "/home/kautu/Documents/GDP_REG/gfcf_f.csv", 
+GDP.GFCF.f <- read.csv(file = "gfcf_f.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.GFCF.f) <- GDP.GFCF.f$TIME
 gfcf.f <- as.matrix(GDP.GFCF.f[2:204])
 
-GDP.GFCF.G <- read.csv(file = "/home/kautu/Documents/GDP_REG/gfcf_g.csv", 
+GDP.GFCF.G <- read.csv(file = "gfcf_g.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.GFCF.G) <- GDP.GFCF.G$TIME
 gfcf.g <- as.matrix(GDP.GFCF.G[2:204])
 
-GDP.GFCF.K <- read.csv(file = "/home/kautu/Documents/GDP_REG/gfcf_k.csv", 
+GDP.GFCF.K <- read.csv(file = "gfcf_k.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.GFCF.K) <- GDP.GFCF.K$TIME
 gfcf.k <- as.matrix(GDP.GFCF.K[2:204])
 
-GDP.GFCF.O <- read.csv(file = "/home/kautu/Documents/GDP_REG/gfcf_o.csv", 
+GDP.GFCF.O <- read.csv(file = "gfcf_o.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.GFCF.O) <- GDP.GFCF.O$TIME
@@ -438,40 +438,40 @@ GFCF.acf.w <- KSS(formula = log(tour.nin) ~ log(gfcf.a) + log(gfcf.c) + log(gfcf
 ##Alternative Explanation Variables Loading
 
 ##Dependent variable: GDP at current market prices by NUTS 2 regions
-GDPRE <- read.csv(file = "/home/kautu/Documents/GDP_REG/10r_2gdp.csv", 
+GDPRE <- read.csv(file = "10r_2gdp.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDPRE) <- GDPRE$TIME
 Gregio <- as.matrix(GDPRE[2:269])
 
-GDPRE.PPS <- read.csv(file = "/home/kautu/Documents/GDP_REG/10r_2gdp_pps.csv", 
+GDPRE.PPS <- read.csv(file = "10r_2gdp_pps.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDPRE.PPS) <- GDPRE.PPS$TIME
 Gregio.pps <- as.matrix(GDPRE.PPS[2:269])
 
-POP <- read.csv(file = "/home/kautu/Documents/GDP_REG/population.csv", 
+POP <- read.csv(file = "population.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(POP) <- POP$TIME
 popu <- as.matrix(POP[2:269])
 
 ## Independent variables: HRST by category and NUTS 2 regions
-GDP.HRST <- read.csv(file = "/home/kautu/Documents/GDP_REG/hrst.csv", 
+GDP.HRST <- read.csv(file = "hrst.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.HRST) <- GDP.HRST$TIME
 hrst <- as.matrix(GDP.HRST[2:269])
 
 ## Independent variables: Population aged 25-64 by educational attainment level
-GDP.EDAT <- read.csv(file = "/home/kautu/Documents/GDP_REG/edat.csv", 
+GDP.EDAT <- read.csv(file = "edat.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDP.EDAT) <- GDP.EDAT$TIME
 edat <- as.matrix(GDP.EDAT[2:269])
 
 ## Independent variables: Nights spent at tourist accommodation establishments
-GDPRE.TOUR <- read.csv(file = "/home/kautu/Documents/GDP_REG/tour.csv", 
+GDPRE.TOUR <- read.csv(file = "tour.csv", 
 		    sep = ",", 
 		    header = TRUE)
 row.names(GDPRE.TOUR) <- GDPRE.TOUR$TIME
