@@ -1,5 +1,5 @@
 # ereg
-Repilication Codes and Data for replication for the paper "The Communication and European Regional Economic Growth: the Interactive Fixed Eﬀects Approach" 
+Repilication Codes and Data for the paper "The Communication and European Regional Economic Growth: the Interactive Fixed Eﬀects Approach" 
 
 Make all the data .csv files with the IFE.R script in the same foler, and the main figures and benchmark regression results of the interactive fixed effects will be generated from the major script, IFE.R. The script, present.R , separately visualizes the relevant variables.
 
