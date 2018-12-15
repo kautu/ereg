@@ -1,9 +1,10 @@
 # ereg
 Repilication Codes and Data for the paper "The Communication and European Regional Economic Growth: the Interactive Fixed Eﬀects Approach" 
 
-Make all the data .csv files with the IFE.R script in the same foler, and the main figures and benchmark regression results of the interactive fixed effects will be generated from the major script, IFE.R. 
+Make all the data .csv files in the data repository with the following R scripts in the same folder. 
 
-The script, present.R , separately visualizes the relevant variables.
+The main figures and benchmark regression results of the interactive fixed effects will be generated from the major script, IFE.R. 
+The script, present.R , separately visualizes the Dependent Variables and Explanatory Variables.
 
 The script, kmeans.R , presents the results from K-means algorithm in the robustness checks. 
 The script, CART.R, illustrates the classification and regression trees results in the robustness checks. 
